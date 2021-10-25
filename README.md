@@ -14,11 +14,21 @@ Like: Git Bash.
 
 This scripts needs to run from the .m2 direcroty, so make sure, you do have admin rights to copy file to the .m2 directory.
 
-# How to execute:
+# How to execute?
 
 1. Copy the 'encrypt-passwords.sh' file from the 'MavenSettingPasswords' directory (in the repo) to .m2 directory in your profile.
 2. Open command-line interface (like Git Bash) and change directory to the location where 'encrypt-passwords.sh' exists.
 3. Execute 'encrypt-passwords.sh' (For windows, you might need to use **./encrypt-passwords.sh**)
+
+## What would you expect after this?
+
+Once execuution of the scripts completes:
+1.  Backup file would be created in the .m2 directory. So, that you can use this if something doesn't work as expected.
+2.  You should be able to see passwords of settings.xml files are changed to encrypted values in enclosed withn {}.
+3.  You should be able to run maven build commands without any issues.
+
+# Future Passwords change:
+Update the password in the settings.xml file in the plain text (make sure '{' and '}' are removed) and re-run this script again.
 
 # Issues:
 Please share your feedback, if you find any issues with this.
