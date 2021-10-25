@@ -39,7 +39,8 @@ if [ -f  $SETTTINGS_MASTER_FILE ]
 then
 	echo $SETTTINGS_MASTER_FILE "file exists, using existing one"
 else
-	echo "Need to create " $SETTTINGS_MASTER_FILE " file, please provide master password: "
+	echo "===========================================================================";
+	echo "Need to create " $SETTTINGS_MASTER_FILE " file, please provide master password: ";
 	read masterPassword;
 	echo "You master password " $masterPassword ;
 	encryptedMasterPassword=$(mvn --encrypt-master-password $masterPassword);
