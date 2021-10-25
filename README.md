@@ -1,4 +1,4 @@
-# Encrypting plain texts passwords in settings.xml file for maven
+# Encrypt plain texts passwords in settings.xml file for maven
 
 You might need to store some passwords in settings.xml file to download required dependencies from non-publiic repositories, which can be downloaded from authorised persons only. 
 
