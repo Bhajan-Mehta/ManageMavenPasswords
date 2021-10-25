@@ -33,6 +33,8 @@ then
 	echo "You can try this again once you set-up settings.xml file."
 	echo "==========================================================================="
 	exit 1;
+else
+	cp $SETTTINGS_FILE $SETTTINGS_FILE.bak;
 fi
 
 if [ -f  $SETTTINGS_MASTER_FILE ]
