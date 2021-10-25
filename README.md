@@ -12,7 +12,7 @@ In both of the above cases, you don't need to worry about your passwords, if tho
 You need to run this shell script on any linux supported command prompt, if you are using windows machine.
 Like: Git Bash.
 
-This scripts needs to run from the .m2 direcroty, so make sure, you do have admin rights to copy file to the .m2 directory.
+This scripts needs to run from the .m2 direcroty, so make sure, you do have enough rights to copy file to the .m2 directory.
 
 # How to execute?
 Clone the repo and execute the script, simple as that.
