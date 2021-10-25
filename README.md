@@ -21,7 +21,8 @@ Here are the steps, you need to follow:
 
 1. Clone the repo _OR_ Copy the 'encrypt-passwords.sh' file from the 'MavenSettingPasswords' directory (in the repo) to .m2 directory in your profile.
 2. Open command-line interface (like Git Bash) and change directory to the location where 'encrypt-passwords.sh' exists.
-3. Execute 'encrypt-passwords.sh' (For windows, you might need to use **./encrypt-passwords.sh**)
+3. Execute 'encrypt-passwords.sh' (For windows, you might need to use **./encrypt-passwords.sh**) and follow the instructions.
+4. And, it is done :)
 
 ```sh
 git clone git@github.com:Bhajan-Mehta/MavenSettingPasswords.git
