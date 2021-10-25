@@ -18,7 +18,7 @@ This scripts needs to run from the .m2 direcroty, so make sure, you do have admi
 
 1. Copy the 'encrypt-passwords.sh' file from the 'MavenSettingPasswords' directory (in the repo) to .m2 directory in your profile.
 2. Open command-line interface (like Git Bash) and change directory to the location where 'encrypt-passwords.sh' exists.
-3. Execute 'encrypt-passwords.sh' (For windows, you might need to use ./encrypt-passwords.sh
+3. Execute 'encrypt-passwords.sh' (For windows, you might need to use **./encrypt-passwords.sh**)
 
 # Issues:
 Please share your feedback, if you find any issues with this.
