@@ -6,7 +6,7 @@ It is highly recommended that you should store passwords in the encrypted format
 1. You might need to share setting.xml file to any other team mate,
 2. Sometimes, you need to screen share with some one and if you need to share/show setting.xml file.
 
-In all of the above cases, you don't need to worry about your passwords.
+In both of the above cases, you don't need to worry about your passwords, if those are stored in the encrypted formats rahter then in the plain texts.
 
 # Pre-Requisite
 You need to run this shell script on any linux supported command prompt, if you are using windows machine.
