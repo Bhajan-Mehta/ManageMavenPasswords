@@ -37,7 +37,7 @@ Once execuution of the scripts completes:
 3.  You should be able to run maven build commands without any issues.
 
 # Future Passwords change:
-Update the password in the settings.xml file in the plain text (make sure '{' and '}' are removed) and re-run this script again.
+Update the password in the settings.xml file in the plain text (make sure '{' and '}' are removed/replaced with encrypted password) and re-run this script again.
 
 # Issues:
 Please share your feedback, if you find any issues with this.
