@@ -1,6 +1,6 @@
 # Encrypt plain texts passwords in settings.xml file for maven
 
-You might need to store some passwords in settings.xml file to download required dependencies from non-publiic repositories, which can be downloaded from authorised persons only. 
+You might need to store some passwords in settings.xml file to download required dependencies from non-public repositories, which can be downloaded from authorised person only. 
 
 It is highly recommended that you should store passwords in the encrypted format rather in the plain text. Because:
 1. You might need to share setting.xml file to any other team mate,
