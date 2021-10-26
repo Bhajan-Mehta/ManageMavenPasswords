@@ -25,7 +25,7 @@ Here are the steps, you need to follow:
 4. And, it is done :)
 
 ```sh
-git clone git@github.com:Bhajan-Mehta/MavenSettingPasswords.git
+git clone https://github.com/Bhajan-Mehta/MavenSettingPasswords.git
 cd MavenSettingPasswords/
 ./encrypt-passwords.sh
 ```
