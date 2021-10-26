@@ -36,7 +36,7 @@ then
 else	
 	cp $SETTTINGS_FILE $SETTTINGS_FILE.bak;
 	echo "==========================================================================="
-	echo "Backup file created for settings.xml in .m2 directory."
+	echo "Backup file created for settings.xml in .m2 directory with (.bak extension)"
 fi
 
 if [ -f  $SETTTINGS_MASTER_FILE ]
