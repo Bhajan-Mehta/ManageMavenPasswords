@@ -33,8 +33,10 @@ then
 	echo "You can try this again once you set-up settings.xml file."
 	echo "==========================================================================="
 	exit 1;
-else
+else	
 	cp $SETTTINGS_FILE $SETTTINGS_FILE.bak;
+	echo "==========================================================================="
+	echo "Backup file created for settings.xml in .m2 directory."
 fi
 
 if [ -f  $SETTTINGS_MASTER_FILE ]
