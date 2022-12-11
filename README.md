@@ -36,7 +36,7 @@ Once execuution of the scripts completes:
 2.  You should be able to see passwords of settings.xml files are changed to encrypted values in enclosed withn {}.
 3.  You should be able to run maven build commands without any issues.
 
-# Future Passwords change:
+# Password changes in later state:
 Update the password in the settings.xml file in the plain text (make sure '{' and '}' are removed/replaced with encrypted password) and re-run this script again. It will only update passwords those are in the plain text.
 
 # Issues:
