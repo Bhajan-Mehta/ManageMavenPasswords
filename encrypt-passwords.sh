@@ -3,6 +3,7 @@
 # Variables
 SETTTINGS_MASTER_FILE="settings-security.xml"
 TEMP_PWD_FILE="passwords.txt"
+UNQ_PWD_LIST="unique_passwords.txt"
 SETTTINGS_FILE="settings.xml"
 PWD_CHANGE_COUNTER=0;
 MAX_RETRY=10;
@@ -59,7 +60,8 @@ fi
 #read p 
 
 grep -oP "<password>[^{](.*)</password>" $SETTTINGS_FILE | sed 's#<[^>]*>##g' > $TEMP_PWD_FILE
-exec 0<$TEMP_PWD_FILE
+uniq $TEMP_PWD_FILE $UNQ_PWD_LIST
+exec 0<$UNQ_PWD_LIST
 
 while read line 
 do
@@ -81,6 +83,7 @@ do
 	done;
 done
 rm $TEMP_PWD_FILE
+rm $UNQ_PWD_LIST
 
 # echo "------- Counter value ----- " $PWD_CHANGE_COUNTER;
 
