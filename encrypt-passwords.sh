@@ -7,10 +7,13 @@ UNQ_PWD_LIST="unique_passwords.txt"
 SETTTINGS_FILE="settings.xml"
 PWD_CHANGE_COUNTER=0;
 MAX_RETRY=10;
-
+CUR_TIMESTAMP_MS=$(($(date +%s%N)/1000000))
+BASE_SETTINGS_FILE_NAME=$(basename $SETTTINGS_FILE .xml)
+BACK_UP_FILE=$BASE_SETTINGS_FILE_NAME"-"$CUR_TIMESTAMP_MS"-bak.xml"
 
 currentDriectoryName=${PWD##*/} 
-echo $currentDriectoryName
+echo "Current Working directory : " $currentDriectoryName
+echo "Time stamp in Milli Seconds : " $CUR_TIMESTAMP_MS
 
 if [ $currentDriectoryName != ".m2" ]
 then
@@ -23,7 +26,7 @@ then
 	cd ~/.m2
 	echo "Auto execution is starting now again..."
 	./$0
-	exit 1;
+	exit 0;
 fi
 
 if [ ! -f $SETTTINGS_FILE ]
@@ -35,7 +38,7 @@ then
 	echo "==========================================================================="
 	exit 1;
 else	
-	cp $SETTTINGS_FILE $SETTTINGS_FILE.bak;
+	cp $SETTTINGS_FILE $BACK_UP_FILE;
 	echo "==========================================================================="
 	echo "Backup file created for settings.xml in .m2 directory with (.bak extension)"
 fi
@@ -61,6 +64,7 @@ fi
 
 grep -oP "<password>[^{](.*)</password>" $SETTTINGS_FILE | sed 's#<[^>]*>##g' > $TEMP_PWD_FILE
 uniq $TEMP_PWD_FILE $UNQ_PWD_LIST
+
 exec 0<$UNQ_PWD_LIST
 
 while read line 
@@ -84,7 +88,6 @@ do
 done
 rm $TEMP_PWD_FILE
 rm $UNQ_PWD_LIST
-
 # echo "------- Counter value ----- " $PWD_CHANGE_COUNTER;
 
 if [ $PWD_CHANGE_COUNTER -eq 0 ]
@@ -106,6 +109,7 @@ else
 	else
 		echo "=================================================================="
 		echo $PWD_CHANGE_COUNTER " passwords are replaced successfully.........."
+		echo "Back up file created : $BACK_UP_FILE "
 		echo "=================================================================="
 	fi
 
