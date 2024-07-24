@@ -19,14 +19,14 @@ Clone the repo and execute the script, simple as that.
 
 Here are the steps, you need to follow:
 
-1. Clone the repo _OR_ Copy the 'encrypt-passwords.sh' file from the 'MavenSettingPasswords' directory (in the repo) to .m2 directory in your profile.
+1. Clone the repo _OR_ Copy the 'encrypt-passwords.sh' file from the 'ManageMavenPasswords' directory (in the repo) to .m2 directory in your profile.
 2. Open command-line interface (like Git Bash) and change directory to the location where 'encrypt-passwords.sh' exists.
 3. Execute 'encrypt-passwords.sh' (For windows, you might need to use **./encrypt-passwords.sh**) and follow the instructions. It may ask you for the password, you can enter any password.
 4. And, it is done :)
 
 ```sh
-git clone https://github.com/Bhajan-Mehta/MavenSettingPasswords.git
-cd MavenSettingPasswords/
+git clone https://github.com/Bhajan-Mehta/ManageMavenPasswords.git
+cd ManageMavenPasswords/
 ./encrypt-passwords.sh
 ```
 ## What would you expect after this?
